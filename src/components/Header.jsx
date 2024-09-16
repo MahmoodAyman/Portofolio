@@ -1,13 +1,12 @@
 import { useState } from "react";
-import React from "react";
 import Navbar from "./Navbar";
 function Header() {
     const [navOpen, setNavOpen] = useState(false);
   return (
     <header className="fixed top-0 w-full h-20 flex items-center z-50 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
-      <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1f3]">
+      <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 lg:grid lg:grid-cols-[1fr,auto,1fr]">
         <h1>
-          <a href="/" className="logo">
+          <a href="#home" className="logo">
             <img
               src="/images/MALogo.png"
               width={40}

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { PropTypes } from "prop-types";
+import { useEffect, useRef } from "react";
+import PropTypes  from "prop-types";
 
 function Navbar({ navOpen }) {
   const lastActiveLink = useRef();
@@ -50,7 +50,7 @@ function Navbar({ navOpen }) {
     },
   ];
   return (
-    <nav className={"navbar" + (navOpen ? "active" : "")}>
+    <nav className={"navbar" + (navOpen ? " active" : "")}>
       {
       navItems.map((item, key) => (
         <a
