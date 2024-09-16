@@ -12,7 +12,7 @@ function About(){
     return (
        <section id="about" className="section">
            <div className="container">
-               <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 ">
+               <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
                    <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl">I&apos;m Mahmoud Ayman, a Software Engineer with a strong background in designing and implementing highly efficient web applications. Holding a Bachelor&apos;s degree in Computer Science, I have hands-on experience with a diverse range of web development technologies, including React, Node.js, Tailwind CSS, and many more. Beyond development, I am also passionate about teaching, with expertise in programming and computer science fundamentals such as Object-Oriented Programming (OOP), Databases, Algorithms, and Data Structures. Whether I&apos;m building robust web solutions or guiding others through the complexities of coding, I bring dedication and innovation to every project I undertake.</p>
                <div className={"flex flex-wrap items-center gap-4 md:gap-7 md:flex-nowrap"}>
                    {

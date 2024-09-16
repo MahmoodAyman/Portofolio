@@ -55,17 +55,17 @@ function Skills() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className={"headline-2"}>
+        <h2 className={"headline-2 reveal-up"}>
           My Toolbox: Skills, Tools, and Technologies
         </h2>
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[70ch]">
+        <p className="text-zinc-400 mt-3 mb-8 max-w-[70ch] reveal-up">
           Crafting efficient and scalable web solutions with a knack for
           problem-solving and a passion for innovative design. Dive into the
           skills that drive my work.
         </p>
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(200px,_1fr))]">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard imgSrc={imgSrc} label={label} desc={desc} key={key} />
+            <SkillCard imgSrc={imgSrc} label={label} desc={desc} key={key} classes={"reveal-up"} />
           ))}
         </div>
       </div>

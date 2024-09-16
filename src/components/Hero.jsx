@@ -1,4 +1,5 @@
 import {ButtonPrimary, ButtonSecondary} from "./Button";
+import SocialLinks from "./SocialLinks";
 
 function Hero() {
     return (
@@ -22,7 +23,8 @@ function Hero() {
                     <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
                         Software Engineer & Instructor, ready to bring innovation to your projects.
                     </h2>
-                    <div className="flex items-center gap-3">
+                    <SocialLinks/>
+                    <div className="flex items-center gap-3 mt-4">
                         <ButtonPrimary label="Download CV"
                                        href="https://drive.google.com/file/d/1FWdXvqpp9CciYxf_EFxuZgSv0e_SyT5_/view?usp=sharing"
                                        icon="download"
