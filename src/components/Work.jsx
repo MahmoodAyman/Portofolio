@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useLayoutEffect } from "react";
-gsap.registerPlugin( ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 const works = [
   {
     imgSrc: "/images/projects/Roshta.png",
@@ -48,7 +48,7 @@ function Work() {
         ease: "none",
         scrollTrigger: {
           trigger: slider.current,
-          start: "100% 80%",
+          start: "80% 80%",
           end: () => "+=" + container.current.offsetWidth,
           scrub: true,
           pin: true,
@@ -61,9 +61,9 @@ function Work() {
   }, []);
 
   return (
-    <section id="work" className="section overflow-hidden">
-      <div className="container" ref={container}>
-        <h2 className="headline-2 mb-8 reveal-up">Highlights</h2>
+    <section id="work" className="section overflow-hidden" ref={container}>
+      <div className="container">
+        <h2 className="headline-2 mb-12 reveal-up">Highlights</h2>
         <div className="flex items-stretch gap-5 w-1/3" ref={slider}>
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
