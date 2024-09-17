@@ -44,7 +44,7 @@ function Work() {
     const ctx = gsap.context(() => {
       let slides = gsap.utils.toArray(".slide");
       gsap.to(slides, {
-        xPercent: -100 * (slides.length - 1),
+        xPercent: -100 * (slides.length - 0.5),
         ease: "none",
         scrollTrigger: {
           trigger: slider.current,
